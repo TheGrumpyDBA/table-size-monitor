@@ -38,7 +38,7 @@ DECLARE @RemoveJobs		CHAR(1),
 
 -- Set UnInstall Parameters.  
 SET @RemoveJobs			= 'Y';	-- Set to 'N' if you do not want the SQL Agent jobs to be Removed
-SET @RemoveTables		= 'Y';	-- Set to 'Y' if you want the tables that store data to be Removed
+SET @RemoveTables		= 'N';	-- Set to 'Y' if you want the tables that store data to be Removed
 SET @JobNamePrefix		= NULL;	-- Set the prefix used for all jobs.  
 								--		Do not specify if jobs used the default - prefixed with "_Monitor_@@SERVERNAME_TableSize".
 SET @LogJobName			= NULL; -- Set the name of the Log Job.  This is only necessary if the job name does not follow the naming standard using the original installation script
